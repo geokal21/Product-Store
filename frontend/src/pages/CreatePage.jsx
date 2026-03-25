@@ -7,6 +7,11 @@ const CreatePage = () => {
     price: "",
     image: "",
   });
+
+  const handleAddProduct = () => {
+  console.log(newProduct);
+  };
+	
   return (
    <Container maxW={"container.sm"}>
     <VStack 
