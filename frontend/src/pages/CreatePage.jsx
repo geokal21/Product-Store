@@ -25,6 +25,10 @@ const CreatePage = () => {
           value={newProduct.name}
           onchange={(e) => setNewProduct({ ...newProduct, name: e.target.value })}
         />
+
+        <Button colorScheme='blue' onClick={handleAddProduct} w='full'>
+							Add Product
+						</Button>  
         </VStack>
       </Box>
     </VStack>
