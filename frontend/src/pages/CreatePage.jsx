@@ -7,7 +7,8 @@ const CreatePage = () => {
     price: "",
     image: "",
   });
-  return <Container maxW={"container.sm"}>
+  return (
+   <Container maxW={"container.sm"}>
     <VStack 
       spacing={8}
     >
@@ -32,7 +33,8 @@ const CreatePage = () => {
         </VStack>
       </Box>
     </VStack>
-  </Container>;
+  </Container>
+  );	  
 };
 
 export default CreatePage;
