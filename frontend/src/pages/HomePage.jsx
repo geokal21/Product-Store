@@ -15,6 +15,18 @@ const HomePage = () => {
 					Current Products 🚀
 				</Text>
 
+		  <SimpleGrid
+          colums={{
+            base: 1,
+            md: 2,
+            lg: 3
+          }}
+          spacing={10}
+          w={"full"}
+        >
+
+        </SimpleGrid>
+
         <Text fontSize='xl' textAlign={"center"} fontWeight='bold' color='gray.500'>
           No products found 😢{" "}
           <Link to={"/create"}>
