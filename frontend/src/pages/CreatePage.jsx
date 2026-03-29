@@ -9,7 +9,7 @@ const CreatePage = () => {
     image: "",
   });
 
-  const {createProduct} = useProduct()	
+  const {createProduct} = useProductStore();	
 
   const handleAddProduct = async() => {
     const {success, message} = await createProduct(newProduct)
