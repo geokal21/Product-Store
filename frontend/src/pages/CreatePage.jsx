@@ -13,6 +13,8 @@ const CreatePage = () => {
 
   const handleAddProduct = async() => {
     const {success, message} = await createProduct(newProduct)
+	console.log("Success:", success);
+    console.log("Message:", message);  
   };
 	
   return (
