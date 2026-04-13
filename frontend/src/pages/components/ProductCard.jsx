@@ -29,7 +29,7 @@ const ProductCard = ({product}) => {
 
        <HStack spacing={2}>
 					<IconButton icon={<EditIcon />} colorScheme='blue' />
-					<IconButton icon={<DeleteIcon />} onClick={handleDeleteProduct} colorScheme='red' />
+					<IconButton icon={<DeleteIcon />} onClick={() =>handleDeleteProduct(product._id)} colorScheme='red' />
 		</HStack>
       </Box>
 
