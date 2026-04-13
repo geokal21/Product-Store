@@ -24,14 +24,10 @@ const ProductCard = ({product}) => {
 					${product.price}
 				</Text>
 
-        <HStack spacing={2}>
-					<IconButton icon={<EditIcon />} onClick={onOpen} colorScheme='blue' />
-					<IconButton
-						icon={<DeleteIcon />}
-						onClick={() => handleDeleteProduct(product._id)}
-						colorScheme='red'
-					/>
-				</HStack>
+       <HStack spacing={2}>
+					<IconButton icon={<EditIcon />} colorScheme='blue' />
+					<IconButton icon={<DeleteIcon />} colorScheme='red' />
+		</HStack>
       </Box>
 
     </Box>
