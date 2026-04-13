@@ -4,6 +4,9 @@ import { Box, Heading, HStack, IconButton, Image, Text, useColorModeValue } from
 const ProductCard = ({product}) => {
   const textColor = useColorModeValue("gray.600", "gray.200");
   const bg = useColorModeValue("white", "gray.800");
+
+  const handleDeleteProduct = (pid) => {}
+	
   return (
     <Box
       shadow='lg'
@@ -26,7 +29,7 @@ const ProductCard = ({product}) => {
 
        <HStack spacing={2}>
 					<IconButton icon={<EditIcon />} colorScheme='blue' />
-					<IconButton icon={<DeleteIcon />} colorScheme='red' />
+					<IconButton icon={<DeleteIcon />} onClick={handleDeleteProduct} colorScheme='red' />
 		</HStack>
       </Box>
 
