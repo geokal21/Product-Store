@@ -40,7 +40,8 @@ const HomePage = () => {
            ))}	  
        </SimpleGrid>
 
-        <Text fontSize='xl' textAlign={"center"} fontWeight='bold' color='gray.500'>
+        {products.length === 0 && (
+          <Text fontSize='xl' textAlign={"center"} fontWeight='bold' color='gray.500'>
           No products found 😢{" "}
           <Link to={"/create"}>
               <Text as='span' color='blue.500' _hover={{ textDecoration: "underline" }}>
@@ -48,6 +49,7 @@ const HomePage = () => {
               </Text>
           </Link>
         </Text>
+        )}
       </VStack>
     </Container>
   )
