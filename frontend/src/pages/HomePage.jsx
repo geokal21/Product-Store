@@ -35,7 +35,10 @@ const HomePage = () => {
           w={"full"}
         >
 
-        </SimpleGrid>
+		 {products.map((product) => (
+             <ProductCard key={product._id} product={product} />
+           ))}	  
+       </SimpleGrid>
 
         <Text fontSize='xl' textAlign={"center"} fontWeight='bold' color='gray.500'>
           No products found 😢{" "}
