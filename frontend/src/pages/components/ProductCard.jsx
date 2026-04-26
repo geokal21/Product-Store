@@ -1,5 +1,5 @@
 import { DeleteIcon, EditIcon } from "@chakra-ui/icons";
-import { Box, Heading, HStack, IconButton, Image, Text, Modal, ModalCloseButton, ModalContent, ModalHeader, ModalOverlay, useColorModeValue, useDisclosure, useToast } from '@chakra-ui/react';
+import { Box, Heading, HStack, IconButton, Image, Text, Modal, ModalBody, ModalCloseButton, ModalContent, ModalHeader, ModalOverlay, useColorModeValue, useDisclosure, useToast } from '@chakra-ui/react';
 import { useProductStore } from "../../store/product";
 
 const ProductCard = ({product}) => {
@@ -63,8 +63,24 @@ const ProductCard = ({product}) => {
       <ModalContent>
         <ModalContent>Update Product</ModalContent>
 		<ModalCloseButton /> 
-		  
-      </ModalContent>  
+		<ModalBody>
+			<VStack spacing={4}>
+			  <Input
+				placeholder='Product Name'
+			    name='name'
+			  />
+			  <Input
+				placeholder='Price'
+				name='price'
+				type='number'
+			  />
+			  <Input
+				placeholder='Image URL'
+				name='image'
+			   />
+			 </VStack>
+		 </ModalBody>  
+		 </ModalContent>  
       
       </Modal>	
     </Box>
