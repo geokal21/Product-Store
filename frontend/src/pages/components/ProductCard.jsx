@@ -27,7 +27,7 @@ const ProductCard = ({product}) => {
     } else {
       toast({
         title: "Success",
-        description: "Product updated successfully",
+        description: message,
         status: "success",
         duration: 3000,
         isClosable: true,
@@ -49,7 +49,7 @@ const ProductCard = ({product}) => {
     } else {
       toast({
         title: "Success",
-        description: message,
+        description: "Product updated successfully",
         status: "success",
         duration: 3000,
         isClosable: true,
