@@ -27,8 +27,6 @@ A modern full-stack product store application built with React on the frontend a
 *Form to add new products to the store*
 
 
-> **Note**: To add screenshots, create a `screenshots` folder in the root directory and replace the placeholder images with actual screenshots of your application.
-
 ## �🛠️ Tech Stack
 
 ### Frontend
